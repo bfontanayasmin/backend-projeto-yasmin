@@ -5,9 +5,13 @@ BookLet consome a Google Books API para buscar e recomendar livros com base em t
 
 A Google Books API permite que você acesse uma vasta coleção de livros disponíveis no Google Books, possibilitando buscas por título, autor, categoria, entre outros. A API fornece dados detalhados sobre os livros, como título, autores, descrição, categoria, links de imagens da capa e muito mais. Com ela, é possível realizar pesquisas e obter informações sobre livros de forma eficiente.
 
+
 Disponível em: http://localhost:8000
 
-Sobre as rotas:
+
+
+
+* Sobre as rotas:
 
   GET /api/livros/{titulo} -- GET http://localhost:8000/api/livros/extraordinario
   Busca livros por título.
@@ -22,6 +26,9 @@ Sobre as rotas:
 		"categoria": "Fiction"
 	}
 
+
+
+
   GET /api/genero/{categoria} -- GET http://localhost:8000/api/genero/drama
   Busca livros por categoria.
   Resposta:
@@ -35,7 +42,9 @@ Sobre as rotas:
 		"capaUrl": "http://books.google.com/books/content?id=4SESDAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
 		"categoria": "Drama"
 	},
-  
+
+
+
   POST /api/recomendar
   Recomenda livros com base nas preferências do usuário (passar as preferências como JSON no corpo da requisição).
   Exemplo: POST http://localhost:8000/api/recomendar
