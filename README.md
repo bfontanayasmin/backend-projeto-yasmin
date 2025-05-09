@@ -13,7 +13,8 @@ Disponível em: http://localhost:8000
 
 * Sobre as rotas:
 
-  GET /api/livros/{titulo} -- GET http://localhost:8000/api/livros/extraordinario
+  GET /api/livros/{titulo}
+  GET http://localhost:8000/api/livros/extraordinario
   Busca livros por título.
   Resposta:[
 	{
@@ -29,7 +30,8 @@ Disponível em: http://localhost:8000
 
 
 
-  GET /api/genero/{categoria} -- GET http://localhost:8000/api/genero/drama
+  GET /api/genero/{categoria}
+  GET http://localhost:8000/api/genero/drama
   Busca livros por categoria.
   Resposta:
   
